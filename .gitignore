@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# TypeScript
+*.tsbuildinfo
+gen/
+dist/
+
+# Environment files
+.env.local
+.env.*.local
+default-env.json
+.cdsrc-private.json
+
+# Build outputs
+*.mtar
+mta_archives/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Database
+*.db
+.db/
+
+# Temporary files
+*.tmp
+.tmp/

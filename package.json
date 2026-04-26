@@ -1,0 +1,28 @@
+{
+  "name": "sap-btp-cap-template",
+  "version": "1.0.0",
+  "description": "SAP BTP CAP Template Project",
+  "repository": "",
+  "private": true,
+  "engines": {
+    "node": "^18 || ^20 || ^22",
+    "npm": "^10"
+  },
+  "scripts": {
+    "install": "npm install --prefix sample",
+    "dev": "cd sample && cds watch",
+    "test": "cd sample && npm test",
+    "test:unit": "cd sample && npm run test:unit",
+    "test:integration": "cd sample && npm run test:integration",
+    "build": "cd sample && npm run build",
+    "clean": "rm -rf node_modules sample/node_modules sample/app/*/node_modules && rm -f package-lock.json sample/package-lock.json sample/app/*/package-lock.json",
+    "format": "prettier --write '**/*.{js,ts,json,xml,html,css,scss,md,yaml,yml}'"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@prettier/plugin-xml": "^3.4.1",
+    "eslint": "^9.9.1",
+    "globals": "^16.0.0",
+    "prettier": "^3.3.3"
+  }
+}
